@@ -36,35 +36,26 @@ Responsive design
 
 🧠 Concepts Covered
 1️⃣ Functional Components
-
 The entire application is built using a React functional component.
 
 2️⃣ useState Hook
 const [isVisible, setIsVisible] = useState(false);
-
 isVisible → Stores the current visibility state
-
 setIsVisible → Updates the state
-
 Initial value → false (text hidden)
 
 3️⃣ Toggle Logic
 const handleToggle = () => {
   setIsVisible(prev => !prev);
 };
-
 This function switches the state between true and false.
 
 4️⃣ Conditional Rendering
 {isVisible && <p>Your text appears here!</p>}
-
 The text is rendered only when isVisible is true.
 
 5️⃣ Dynamic Styling
 color: isVisible ? "green" : "red"
-
 Green → Text visible
-
 Red → Text hidden
-
 This demonstrates conditional styling in React.
